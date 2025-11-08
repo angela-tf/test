@@ -74,6 +74,10 @@ tickets_form.addEventListener('submit', async function(event){
         catch(error){
             console.log('Error', error);
             alert('ERROR')
+            console.error('Full error object:', error);
+  console.error('Error name:', error.name);
+  console.error('Error message:', error.message);
+  alert('Network error: ' + error.message);
         }
     }
     

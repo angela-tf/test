@@ -1,6 +1,6 @@
 // netlify/functions/submit-form.js
 import nodemailer from 'nodemailer';
-import { createClient } from "https://esm.sh/@supabase/supabase-js@2";
+import { createClient } from '@supabase/supabase-js';
 
 //info from supabase for connection
 const supabase_url = process.env.SUPABASE_URL;
@@ -25,9 +25,6 @@ exports.handler = async (event) => {
                 alert('Error: ' + error.message);
             } else {
                 console.log('Inserted data', data);
-                // setTimeout(function(){
-                //     window.location.href = '/success_msg.html';
-                // }, "2000")
 
             }
    
