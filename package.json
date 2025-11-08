@@ -15,8 +15,12 @@
     "url": "https://github.com/angela-tf/test/issues"
   },
   "homepage": "https://github.com/angela-tf/test#readme",
-  "description": "",
   "dependencies": {
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "googleapis": "^165.0.0",
+    "nodemailer": "^7.0.10",
     "resend": "^3.0.0"
-  }
+  },
+  "description": ""
 }

@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
   font-family: "Clash Display";
   src: url("/fonts/ClashDisplay_Complete/Fonts/WEB/fonts/ClashDisplay-Medium.woff") format("woff");
   font-style: normal;
@@ -16,7 +16,7 @@
   font-weight: 200 700;
   font-display: swap;
   font-style: normal;
-}
+} */
 .btn_primary {
   font-family: "ClashDisplay-Medium";
   border-radius: 30px;
