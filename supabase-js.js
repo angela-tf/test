@@ -66,7 +66,7 @@ tickets_form.addEventListener('submit', async function(event){
             } else {
                 console.log('Inserted data', data);
                 setTimeout(function(){
-                    window.location.href = '/PHP/success_msg.html';
+                    window.location.href = '/success_msg.html';
                 }, "2000")
 
             }

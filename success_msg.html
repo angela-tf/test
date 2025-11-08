@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation Confirmation</title>
+    <link rel="stylesheet" href="css/forms.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <div class="bgSection"></div>
+        <section class="contentSection">
+            <div class="filmTitle">
+                <h1>Synapse 2066</h1>
+                <div class="shapes">
+                    <div class="vl"></div>
+                    <span class="dot"></span>
+                </div>
+            </div>
+
+            <!-- TITLE -->
+            <div class="contentBox">
+                <div class="titleBox descrBox">
+                    <p class="formTitle">Reservation Confirmation</p>
+                    <button class="btn_icon"><i class="fa-solid fa-xmark fa-xl"></i></button>
+                </div>
+
+                <!-- EVENT DETAILS -->
+                <div class="detailsBox descrBox">
+                    <div id="location" class="details">
+                        <p>Location:&nbsp</p>
+                        <p>SAE House, 297 Kingsland Rd, London E8 4DD</p>
+                    </div>
+                    <div id="date" class="details">
+                        <p>Date:&nbsp</p>
+                        <p>12/12/25</p>
+                    </div>
+                </div>
+
+                <!-- MESSAGE TO THE USER -->
+                <div class="infoBox success_msg">
+                    <h2>Thank you!</h2>
+                    <p>Your tickets have been successfully reserved. Please check your inbox for your confirmation email.</p>
+                    <p>We are excited to see you at the premiere!</p>
+                    <div class="btn_box">
+                        <!-- <button type="button" class="btn_secondary" id="backToTickets" name="confirmBtn">More Tickets</button> -->
+                        <button type="button" class="btn_primary" id="backToHome">Homepage</button>
+                    </div>
+                </div>
+
+        </section>
+    </main>
+</body>
+<script src="https://kit.fontawesome.com/cfd313fcca.js" crossorigin="anonymous"></script>
+<script>
+    let backToHome = document.getElementById('backToHome');
+    backToHome.addEventListener("click", function(){
+        window.location.href = '../tickets.html';
+    })
+</script>
+</html>

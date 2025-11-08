@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Reservation</title>
+    <link rel="stylesheet" href="/css/forms.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <!-- Connecting to supabase -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script> -->
+</head>
+<body>
+    <main>
+        <div class="bgSection"></div>
+        <section class="contentSection">
+
+            <!-- BIG TITLE -->
+            <div class="filmTitle">
+                <h1>Synapse 2066</h1>
+                <div class="shapes">
+                    <div class="vl"></div>
+                    <span class="dot"></span>
+                </div>
+            </div>
+
+            <div class="contentBox">
+
+                <!-- TITLE -->
+                <div class="titleBox descrBox">
+                    <p class="formTitle">Free Premiere Tickets</p>
+                    <button class="btn_icon"><a href="/pre-launch.html"><i class="fa-solid fa-xmark fa-xl"></i></a></button>
+                </div>
+
+                <!-- EVENT DETAILS -->
+                <div class="detailsBox descrBox">
+                    <div id="location" class="details">
+                        <p>Location:&nbsp</p>
+                        <p>SAE House, 297 Kingsland Rd, London E8 4DD</p>
+                    </div>
+                    <div id="date" class="details">
+                        <p>Date:&nbsp</p>
+                        <p>12/12/25</p>
+                    </div>
+                </div>
+
+                <div class="infoBox">
+                    <div class="instructionTexts">
+                        <p>Please enter your information and add one ticket for each guest:</p>
+                    </div>
+
+                    <!-- FORM -->
+                     <!-- action for php: PHP/tickets_reservations.php -->
+                    <form action="" method="post" id="tickets_form" netlify>
+
+                        <!-- ERROR MESSAGES -->
+                       <p class="error_name hidden"></p>
+                       <p class="error_email hidden"></p>
+
+                       <!-- INPUT FIELDS -->
+                        <div class="form">
+                            <div class="userInfo formPart">
+                                <div class="nameBox formBox">
+                                    <label class="labelUser" id="name_label" for="name">Name:</label>
+                                    <input type="text" name="name" id="name">
+                                </div>
+                                <div class="emailBox formBox">
+                                    <label class="labelUser" for="email">Email:</label>
+                                    <input type="email" name="email" id="email">
+                                </div>
+                            </div>
+                            <div class="tickets formPart">
+                                <div class="ticketBox formBox">
+                                    <label  class="labelUser" for="numberOfTickets">Number of Tickets:</label>
+                                    <input type="number" name="numberOfTickets" id="numberOfTickets" min="1" max="40" value="1">
+                                </div>
+                            </div>
+                        </div>  
+
+                        <!-- VALIDATION BUTTON -->
+                        <button type="submit" class="btn_primary" id="submit" name="submit">Submit</button>
+                    </form>
+                    </div>
+
+                </div>
+        </section>
+    </main>
+</body>
+    <!-- <script src="/Javascript/tickets_reservations.js"></script> -->
+    <script src="https://kit.fontawesome.com/cfd313fcca.js" crossorigin="anonymous"></script>
+    <script type="module" src="supabase-js.js"></script>
+</html>

@@ -1,0 +1,487 @@
+@font-face {
+  font-family: "Clash Display";
+  src: url("/fonts/ClashDisplay_Complete/Fonts/WEB/fonts/ClashDisplay-Medium.woff") format("woff");
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Clash Display";
+  src: url("/fonts/ClashDisplay_Complete/Fonts/WEB/fonts/ClashDisplay-Bold.woff") format("woff");
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Cyberpunk";
+  src: url("../fonts/cyberpunk_style_light.woff2") format("woff2");
+  font-weight: 200 700;
+  font-display: swap;
+  font-style: normal;
+}
+.btn_primary {
+  font-family: "ClashDisplay-Medium";
+  border-radius: 30px;
+  font-size: 1rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: white;
+  padding: 1vh 5vh;
+  border: 1px solid #b3bfbf;
+  margin: 2vh auto;
+}
+@media (max-width: 768px) {
+  .btn_primary {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 480px) {
+  .btn_primary {
+    font-size: 0.95rem;
+  }
+}
+
+.btn_secondary {
+  font-family: "ClashDisplay-Medium";
+  border-radius: 30px;
+  font-size: 1rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: white;
+  padding: 1vh 5vh;
+}
+@media (max-width: 768px) {
+  .btn_secondary {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 480px) {
+  .btn_secondary {
+    font-size: 0.95rem;
+  }
+}
+
+.btn_icon {
+  font-family: "ClashDisplay-Medium";
+  border-radius: 30px;
+  font-size: 1rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: white;
+}
+@media (max-width: 768px) {
+  .btn_icon {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 480px) {
+  .btn_icon {
+    font-size: 0.95rem;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  color: white;
+}
+
+.bgSection {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(47, 47, 47);
+  background: url("../images/background_comingsoon.jpg") center;
+  background-size: cover;
+  filter: brightness(50%);
+  position: relative;
+}
+
+section {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+}
+
+h1 {
+  font-size: 4rem;
+  margin-bottom: 2vh;
+  font-family: "Cyberpunk";
+}
+@media (max-width: 768px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+}
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-family: "Clash Display", sans-serif;
+  font-weight: 500;
+  margin-bottom: 1vh;
+}
+@media (max-width: 768px) {
+  h2 {
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 480px) {
+  h2 {
+    font-size: 1.15rem;
+  }
+}
+
+.shapes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5vh;
+}
+
+.vl {
+  border-left: 1px solid #b3bfbf;
+  height: 10vh;
+  position: absolute;
+}
+
+.dot {
+  width: 1.2rem;
+  height: 1.2rem;
+  background-color: #b3bfbf;
+  border-radius: 50%;
+  position: absolute;
+}
+@media (max-width: 768px) {
+  .dot {
+    margin-bottom: 3vh;
+  }
+}
+@media (max-width: 480px) {
+  .dot {
+    margin-bottom: 5vh;
+  }
+}
+
+.contentBox {
+  width: 60%;
+  min-height: 30%;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  background-color: rgba(26, 26, 26, 0.347);
+  border-radius: 20px;
+  margin: 5vh 0;
+}
+@media (max-width: 768px) {
+  .contentBox {
+    border-radius: 10px;
+    width: 80vw;
+    min-height: 30%;
+    margin: 2vh 0;
+  }
+}
+@media (max-width: 480px) {
+  .contentBox {
+    width: 90vw;
+    min-height: 30%;
+    margin: 0;
+  }
+}
+
+.formTitle {
+  font-size: 1.5rem;
+  font-family: "Clash Display", sans-serif;
+  font-weight: 500;
+}
+@media (max-width: 768px) {
+  .formTitle {
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 480px) {
+  .formTitle {
+    font-size: 1.15rem;
+  }
+}
+
+.titleBox {
+  padding: 0.6vw 1vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid #b3bfbf;
+}
+@media (max-width: 768px) {
+  .titleBox {
+    padding: 1.5vw;
+  }
+}
+@media (max-width: 480px) {
+  .titleBox {
+    padding: 2.5vw 4vw;
+  }
+}
+
+.descrBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid #b3bfbf;
+}
+
+@media (max-width: 768px) {
+  .detailsBox {
+    flex-direction: column;
+  }
+}
+@media (max-width: 480px) {
+  .detailsBox {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  #location {
+    text-align: right;
+    border-bottom: 1px solid #b3bfbf;
+  }
+}
+@media (max-width: 480px) {
+  #location {
+    border-bottom: 1px solid #b3bfbf;
+    padding: 2.5vw 4vw;
+  }
+}
+
+.details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0.6vw 1vw;
+}
+@media (max-width: 768px) {
+  .details {
+    padding: 1.5vw 2vw;
+  }
+}
+
+#date {
+  border-left: 1px solid #b3bfbf;
+}
+@media (max-width: 768px) {
+  #date {
+    border-left: none;
+  }
+}
+@media (max-width: 480px) {
+  #date {
+    border-left: none;
+    padding: 2.5vw 4vw;
+  }
+}
+
+.infoBox {
+  padding: 1vw;
+  line-height: 1.5em;
+}
+@media (max-width: 768px) {
+  .infoBox {
+    padding: 2vw;
+  }
+}
+@media (max-width: 480px) {
+  .infoBox {
+    padding: 2.5vw 4vw;
+  }
+}
+
+p {
+  font-family: "Fredoka-Light";
+  font-size: 1.15rem;
+}
+@media (max-width: 768px) {
+  p {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 480px) {
+  p {
+    font-size: 1rem;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: row;
+}
+@media (max-width: 768px) {
+  .form {
+    flex-direction: column;
+  }
+}
+@media (max-width: 480px) {
+  .form {
+    flex-direction: column;
+  }
+}
+
+.userInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 1vw;
+}
+@media (max-width: 768px) {
+  .userInfo {
+    margin-right: 0;
+    width: 100%;
+  }
+}
+
+.formPart:first-child {
+  width: 70%;
+}
+@media (max-width: 768px) {
+  .formPart:first-child {
+    width: 100%;
+  }
+}
+
+.formPart:last-child {
+  width: 30%;
+}
+@media (max-width: 768px) {
+  .formPart:last-child {
+    width: 100%;
+  }
+}
+
+.tickets {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type=text], input[type=email] {
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  padding: 0 1vw;
+}
+
+input[type=number] {
+  background-color: transparent;
+  border: none;
+  width: 30%;
+}
+
+.labelUser {
+  font-family: "Fredoka-Light";
+  min-width: 30%;
+  font-size: 1.15rem;
+}
+@media (max-width: 768px) {
+  .labelUser {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 480px) {
+  .labelUser {
+    font-size: 1rem;
+  }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.formBox {
+  width: 100%;
+  border-left: 1px solid #b3bfbf;
+  border-right: 1px solid #b3bfbf;
+  padding: 1vh 2vh;
+  display: flex;
+  flex-direction: row;
+}
+
+.instructionTexts {
+  font-size: 1.15rem;
+  line-height: normal;
+}
+@media (max-width: 480px) {
+  .instructionTexts {
+    margin-top: 1vh;
+  }
+}
+
+.nameBox {
+  width: 100%;
+  margin-top: 2vh;
+  border-radius: 10px 10px 0 0;
+  border-top: 1px solid #b3bfbf;
+}
+
+.emailBox {
+  border-bottom: 1px solid #b3bfbf;
+  border-top: 1px solid #b3bfbf;
+  border-radius: 0 0 10px 10px;
+}
+
+.ticketBox {
+  margin-top: 2vh;
+  border-radius: 10px;
+  border: 1px solid #b3bfbf;
+  display: flex;
+  justify-content: space-between;
+}
+
+.error_message, .error_name, .error_email, .error_number {
+  color: black;
+  font-family: "Fredoka-Light";
+  margin-top: 1vh;
+  font-size: 1.15rem;
+  background-color: white;
+  padding: 10px 15px;
+  border-radius: 10px;
+  border-left: 10px solid rgb(255, 53, 53);
+}
+
+.hidden {
+  display: none;
+}
+
+.fa-triangle-exclamation {
+  margin-right: 0.5vw;
+}
+
+.spinner {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border: 2px solid rgba(100, 100, 100, 0.6431372549);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: spin 0.6s linear infinite;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+#submit:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}/*# sourceMappingURL=forms.css.map */
