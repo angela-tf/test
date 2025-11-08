@@ -1,0 +1,22 @@
+{
+  "name": "package.json",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angela-tf/test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/angela-tf/test/issues"
+  },
+  "homepage": "https://github.com/angela-tf/test#readme",
+  "description": "",
+  "dependencies": {
+    "resend": "^3.0.0"
+  }
+}
