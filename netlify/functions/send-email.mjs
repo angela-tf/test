@@ -7,10 +7,38 @@ const supabase_url = process.env.SUPABASE_URL;
 const supabase_key = process.env.SUPABASE_KEY;
 
 
-exports.handler = async (event) => {
+export const handler = async (event) => {
 
+  //checking http method
+  if(event.httpMethod !== 'POST'){
+    return {
+        statusCode: 405,
+        body: JSON.stringify({error: 'problem with method'})
+    }
+  }
 
-  const {name, email, numberOfTickets} = JSON.parse(event.body);
+  //check if the body exists
+  if(!event.body){
+    return {
+        statusCode: 400,
+        body: JSON.stringify({error: 'missing body'})
+    }
+  }
+
+  let parsedBody;
+
+  try{
+    parsedBody = JSON.parse(event.body);
+  } catch (error){
+    console.error('error', error);
+    return {
+        statusCode: 400,
+        body: JSON.stringify({error: 'JSON is incorrect'})
+    }
+  }
+
+  const {name, email, numberOfTickets} = parsedBody;
+
   
   try {
 
@@ -18,7 +46,7 @@ exports.handler = async (event) => {
     
             const { data, error } = await supabase
             .from('ticket_reservations')
-            .insert({ name:userName, email:userEmail, numberOfTickets:userTickets })
+            .insert({ name, email, numberOfTickets })
     
             if(error){
                 console.error('Error inserting data:', error);

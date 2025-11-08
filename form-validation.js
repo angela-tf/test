@@ -49,7 +49,7 @@ tickets_form.addEventListener('submit', async function(event){
         }
 
         try{
-            const response = await fetch('./netlify/functions/send-email', {
+            const response = await fetch('/.netlify/functions/send-email', {
                 method: 'POST',
                 headers: {'Content-Type': 'application/json'},
                 body: JSON.stringify({
