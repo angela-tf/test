@@ -8,9 +8,11 @@ const supabase_key = process.env.SUPABASE_KEY;
 
 
 export const handler = async (event) => {
-
+  console.log('httpmethod', event.httpMethod)
+  console.log('event body', event.body)
   //checking http method
   if(event.httpMethod !== 'POST'){
+    console.log('wrong method')
     return {
         statusCode: 405,
         body: JSON.stringify({error: 'problem with method'})
