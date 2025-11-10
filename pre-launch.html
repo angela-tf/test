@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Synapse 2066</title>
+    <link rel="stylesheet" href="/css/pre-launch.css">
+</head>
+<body>
+<div class="background"></div>
+    
+    <div class="container">
+        <div class="content-wrapper">
+            <!-- Title Section - Centered at Top -->
+            <div class="title-section">
+                <h1 class="title">Synapse 2066</h1>
+                <p class="subtitle">Sci-fi & Drama Short Film</p>
+            </div>
+
+            <!-- Timeline with Alternating Items -->
+            <div class="timeline">
+                <!-- Coming Soon + Countdown on Timeline -->
+                <div class="timeline-item left">
+                    <div class="timeline-dot"></div>
+                    <div class="coming-soon-wrapper">
+                    <div class="coming-soon-badge">COMING  SOON</div>
+                        <div class="countdown" id="countdown">
+                            <span id="days" style="display: inline-block; min-width: 2ch; text-align: center;">56</span> days    
+                            <span id="hours" style="display: inline-block; min-width: 2ch; text-align: center;">7</span> h    
+                            <span id="minutes" style="display: inline-block; min-width: 2ch; text-align: center;">55</span> m   
+                            <span id="seconds" style="display: inline-block; min-width: 2ch; text-align: center;">22</span> s  
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Link to Kickstarter - Right -->
+                <!-- <div class="timeline-item right">
+                    <div class="timeline-dot"></div>
+                    <button class="timeline-content" onclick="window.open('https://kickstarter.com', '_blank')">
+                        Link to Kickstarter <img src="images/icons/arrow_topright.svg" alt="arrow" class="arrow">
+                    </button>
+                </div> -->
+
+                <!-- Watch the Trailer - Left -->
+                <div class="timeline-item right">
+                    <div class="timeline-dot"></div>
+                    <button class="timeline-content" onclick="window.open('images/SYNAPSE_TRAILER.mp4', '_blank')">
+                        Watch the Trailer <img src="images/icons/arrow_topright.svg" alt="arrow" class="arrow">
+                    </button>
+                </div>
+
+                <!-- Free Premiere Tickets - Right -->
+                <div class="timeline-item left">
+                    <div class="timeline-dot"></div>
+                    <button class="timeline-content" onclick="window.open('/tickets.html', '_self')">
+                        Free Premiere Tickets <img src="images/icons/arrow_topright.svg" alt="arrow" class="arrow">
+                    </button>
+                </div>
+
+                <!-- Get Updates - Left -->
+                <!-- <div class="timeline-item right">
+                    <div class="timeline-dot"></div>
+                    <button class="timeline-content" onclick="window.open('/newsletter.html', '_self')">
+                        Get Updates <img src="images/icons/arrow_topright.svg" alt="arrow" class="arrow">
+                    </button>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    
+<!-- Trailer Modal -->
+    <div id="trailerModal" class="trailer-modal">
+        <div class="trailer-wrapper">
+            <button class="close-button" onclick="closeTrailerModal()" aria-label="Close trailer">×</button>
+            <div class="trailer-container">
+                <div class="trailer-video-wrapper">
+                    <video id="trailerVideo" class="trailer-video" controls>
+                        <source src="images/SYNAPSE_TRAILER.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="Javascript/pre-launch.js"></script>
+</body>
+</html>

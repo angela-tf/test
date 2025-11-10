@@ -44,6 +44,7 @@ export const handler = async (event) => {
   
   try {
 
+    //connecting to database
     const supabase = createClient(supabase_url, supabase_key);
     
             const { data, error } = await supabase
